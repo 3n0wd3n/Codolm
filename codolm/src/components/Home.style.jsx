@@ -119,7 +119,6 @@ export const HomeOffersContainer = styled.div`
 `;
 
 export const HomeH2Offers = styled.h2`
-    margin: 0;
 `;
 
 export const HomeOffersContent = styled.div`
