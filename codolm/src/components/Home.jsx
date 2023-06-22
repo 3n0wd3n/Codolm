@@ -11,7 +11,8 @@ import {
   HomeButtonsContainer,
   HomeButtonLeft,
   HomeButtonRight,
-  HomeAboutContainerSummary,
+  HomeOffersContainer,
+  HomeOffersContent,
 } from "./Home.style";
 
 export default function Home() {
@@ -44,11 +45,12 @@ export default function Home() {
           <HomeH2Container>About</HomeH2Container>
           <p>I am a fresh graduate from UP in Olomouc where I studied in the Faculty of Natural Sciences field of Informational Technologies. My leisure time is composed of various things and activities. I like to expand my knowledge of health and fitness as well as about new web tech features and also programming in general.</p>
         </HomeAboutContent>
-        <HomeAboutContainerSummary>
-          <HomeH2Container>About</HomeH2Container>
-          <p>I am a fresh graduate from UP in Olomouc where I studied in the Faculty of Natural Sciences field of Informational Technologies. My leisure time is composed of various things and activities. I like to expand my knowledge of health and fitness as well as about new web tech features and also programming in general.</p>
-        </HomeAboutContainerSummary>
       </HomeAboutContainer>
+      <HomeOffersContainer>
+        <HomeOffersContent>
+          Offers
+        </HomeOffersContent>
+      </HomeOffersContainer>
     </>
   );
 }

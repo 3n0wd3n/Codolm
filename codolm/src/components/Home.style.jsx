@@ -67,8 +67,8 @@ export const HomeImg = styled.img`
 `;
 
 export const HomeAboutContainer = styled.div`
-    background-color: #012241;    
-    min-height: 100vh;
+    background-image: linear-gradient(to right, #012241, rgba(56, 125, 122, .9));    
+    min-height: 60vh;
     width: 100%;
     margin-top: 100vh;
     display: flex;
@@ -82,8 +82,9 @@ export const HomeAboutContent = styled.div`
     color: black;
     box-shadow: 0 1px 4px rgba(255,255,255,.6);
     border-radius: 25px;
-    margin: 3rem;
+    width: 40vw;
     font-size: 1.5rem;
+    margin: 2rem;
 `;
 
 export const HomeButtonsContainer = styled.div`
@@ -109,6 +110,20 @@ export const HomeButtonLeft = styled.button`
     &:hover{
         transform: translateY(-5px);
     }
+`;
+
+export const HomeOffersContainer = styled.div`
+    background-color: #fff;
+    min-height: 70vh;
+    max-width: 100vw;
+`;
+
+export const HomeH2Offers = styled.h2`
+    margin: 0;
+`;
+
+export const HomeOffersContent = styled.div`
+
 `;
 
 export const HomeButtonRight = styled(HomeButtonLeft)`
