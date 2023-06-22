@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import water_flow from "../assets/image/water_flow.jpg"
 import { HomeH1, HomeLiContainer, HomeMainContainer, HomeImg, HomeUlContainer, HomeIntroContainer, HomeImgContainer } from './Home.style'
-export default function Home() {
 
+export default function Home() {
     return (
         <HomeMainContainer>
             <HomeIntroContainer>
