@@ -24,10 +24,11 @@ import {
   HomeH2Offers,
   HomeContactContainer,
   HomeCourseContainer,
-  HomeCourseButton,
+  HomeCoursesButton,
   HomeFlagContainer,
-  HomeH3Offers, 
-  HomeCourseContainerRotation
+  HomeH3Offers,
+  HomeCourseContainerRotation,
+  HomeCourseButton
 } from "./Home.style";
 
 export default function Home() {
@@ -108,22 +109,23 @@ export default function Home() {
             <HomeCourseContainer>
               <HomeH3Offers>Python</HomeH3Offers>
               <img src={python} alt="Python Img" height="200px" width="200px" />
+              <HomeCourseButton>Show</HomeCourseButton>
             </HomeCourseContainer>
           </Fade>
           <Fade duration={2000}>
             <HomeCourseContainer>
               <HomeH3Offers>Basic Front-End</HomeH3Offers>
               <img src={basic_fe} alt="Front End Img" height="150px" width="auto" />
+              <HomeCourseButton>Show</HomeCourseButton>
             </HomeCourseContainer>
           </Fade>
           <Fade duration={2000}>
             <HomeCourseContainerRotation>
               <HomeH3Offers>Advanced Front-End</HomeH3Offers>
               <img src={react} alt="Front End React Img" height="150px" width="auto" />
+              <HomeCourseButton>Show</HomeCourseButton>
             </HomeCourseContainerRotation>
           </Fade>
-
-
         </HomeOffersContent>
         {
           open &&
@@ -147,16 +149,19 @@ export default function Home() {
 
           </HomeOffersContent>
         }
-        <HomeCourseButton onClick={() => setOpen(!open)}>
+        <HomeCoursesButton onClick={() => setOpen(!open)}>
           {
             open ?
               "See Less"
               :
               "See More"
           }
-        </HomeCourseButton>
+        </HomeCoursesButton>
       </HomeOffersContainer>
       <HomeContactContainer>
+        <p>Michael Hajný</p>
+        <p>&copy; Copyright 2023</p>
+        <p>michaelhajny@outlook.cz</p>
       </HomeContactContainer>
     </>
   );

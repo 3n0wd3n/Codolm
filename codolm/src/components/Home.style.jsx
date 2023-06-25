@@ -167,9 +167,10 @@ export const HomeOffersContent = styled.div`
 
 export const HomeCourseContainer = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    padding: 2rem 0 2rem 0;
     /* background-color: #fff; */
     background-image: linear-gradient(to right, rgba(255, 255, 255), rgba(255, 255, 255), rgba(255, 255, 255), rgba(56, 125, 122, .2));
     width: 300px;
@@ -204,7 +205,7 @@ export const HomeH3Offers = styled.h3`
     font-weight: 300;
 `;
 
-export const HomeCourseButton = styled.button`
+export const HomeCoursesButton = styled.button`
     border: 1px solid;
     color: #fff;
     width: 150px;
@@ -222,6 +223,24 @@ export const HomeCourseButton = styled.button`
     }
 `;
 
+export const HomeCourseButton = styled(HomeCoursesButton)`
+    border: 1px solid;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: rgba(56, 125, 122);
+    margin: 2rem 0 2rem 0;
+    cursor: pointer;
+    transition: .7s;
+    font-size: 1rem;
+    font-weight: 600;
+    &:hover {
+        background-color: #fff;
+        color: rgba(56, 125, 122);
+    }
+`;
+
 export const HomeButtonRight = styled(HomeButtonLeft)`
     color: #012241;
     background-color: white;
@@ -234,5 +253,10 @@ export const HomeButtonRight = styled(HomeButtonLeft)`
 export const HomeContactContainer = styled.div`
   min-height: 30vh;
   max-width: 100vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-image: linear-gradient(to top, rgba(3, 125, 122), rgba(56, 125, 122, .95));
 `;
