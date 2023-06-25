@@ -153,6 +153,8 @@ export const HomeOffersContainer = styled.div`
 export const HomeH2Offers = styled.h2`
     font-size: 2.5rem;
     font-weight: 300;
+    margin: 0 2rem 0 2rem;
+    text-align: center;
 `;
 
 export const HomeOffersContent = styled.div`
