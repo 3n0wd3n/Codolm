@@ -28,6 +28,11 @@ export const HomeIntroContainer = styled.div`
         width: 100vw;
         height: 50vh;
     }
+
+    @media (max-width: 400px) {
+        width: 100vw;
+        height: 58vh;
+    }
 `;
 
 export const HomeH1Intro = styled.h1`
@@ -57,6 +62,11 @@ export const HomeImgContainer = styled.div`
     @media (max-width: 800px) {
         height: 50vh;
         width: 100vw;
+    }
+
+    @media (max-width: 400px) {
+        width: 100vw;
+        height: 42vh;
     }
     
 `;
