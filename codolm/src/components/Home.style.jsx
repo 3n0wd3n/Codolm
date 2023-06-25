@@ -37,7 +37,7 @@ export const HomeH1Intro = styled.h1`
     text-align: center;
     margin: 0 2rem 0 2rem;
     @media (max-width: 800px) {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
 `;
