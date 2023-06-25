@@ -16,6 +16,13 @@ export const HomeMainContainer = styled.div`
     }
 `;
 
+export const HomeFlagContainer = styled.div`
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+`;
+
 export const HomeIntroContainer = styled.div`
     background-color: #fff;
     height: 100vh;
@@ -96,6 +103,10 @@ export const HomeAboutContent = styled.div`
     width: 40vw;
     font-size: 1.5rem;
     margin: 2rem;
+    & > p:nth-of-type(2){
+        margin: 1rem 0 0 0;
+        color: rgba(0, 0, 10, .2);
+    }
     @media (max-width: 800px) {
         padding: 2rem;
         width: 60vw;
@@ -155,7 +166,12 @@ export const HomeOffersContent = styled.div`
 `;
 
 export const HomeCourseContainer = styled.div`
-    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #fff; */
+    background-image: linear-gradient(to right, rgba(255, 255, 255), rgba(255, 255, 255), rgba(255, 255, 255), rgba(56, 125, 122, .2));
     width: 300px;
     height: 400px;
     box-shadow: 2px 3px 10px #8888;
@@ -165,6 +181,27 @@ export const HomeCourseContainer = styled.div`
     &:hover{
         box-shadow: 4px 5px 25px #8888;
     }
+`;
+
+
+export const HomeCourseContainerRotation = styled(HomeCourseContainer)`
+    & > img {
+        @keyframes rotation{
+            from {
+                transform:rotate(0deg);
+            }     
+
+            to {
+                transform:rotate(360deg);
+            }
+        }
+        animation: rotation infinite 15s linear;
+    }
+`;
+
+export const HomeH3Offers = styled.h3`
+    font-size: 1.5;
+    font-weight: 300;
 `;
 
 export const HomeCourseButton = styled.button`
