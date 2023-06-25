@@ -4,6 +4,8 @@ import cz from "../assets/image/czech-republic.svg";
 import python from "../assets/image/python_3.10.png";
 import basic_fe from "../assets/image/html_css_js.png"
 import react from "../assets/image/react.png"
+import next from "../assets/image/next.png"
+import bash from "../assets/image/bash.png"
 import { Fade, Zoom } from "react-awesome-reveal";
 import React, { useState } from 'react';
 
@@ -133,19 +135,23 @@ export default function Home() {
 
             <Fade duration={2000}>
               <HomeCourseContainer>
-
+                <HomeH3Offers>Terminal Scripting</HomeH3Offers>
+                <img src={bash} alt="Terminal Scripting Img" height="235px" width="auto" />
+                <HomeCourseButton>Show</HomeCourseButton>
               </HomeCourseContainer>
             </Fade>
             <Fade duration={2000}>
               <HomeCourseContainer>
-
+                <HomeH3Offers>Full Stack</HomeH3Offers>
+                <img src={next} alt="Full Stack Scripting Img" height="120px" width="auto" />
+                <HomeCourseButton>Show</HomeCourseButton>
               </HomeCourseContainer>
             </Fade>
-            <Fade duration={2000}>
+            {/* <Fade duration={2000}>
               <HomeCourseContainer>
 
               </HomeCourseContainer>
-            </Fade>
+            </Fade> */}
 
           </HomeOffersContent>
         }

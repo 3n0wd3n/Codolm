@@ -25,3 +25,7 @@ https://www.freecodecamp.org/news/reveal-on-scroll-in-react-using-the-intersecti
 https://stackoverflow.com/questions/43679191/overlay-2-divs-where-one-is-static-and-the-other-is-scrollable
 
 https://www.react-reveal.com/
+
+## Tools
+
+https://retoucher.online/transparent-background
