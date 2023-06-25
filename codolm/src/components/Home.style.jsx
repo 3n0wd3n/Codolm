@@ -87,9 +87,11 @@ export const HomeAboutContent = styled.div`
     font-size: 1.5rem;
     margin: 2rem;
     @media (max-width: 800px) {
-        padding: 1.5rem;
+        padding: 2rem;
         width: 60vw;
+        font-size: 1.2rem;
     }
+
 `;
 
 export const HomeButtonsContainer = styled.div`
