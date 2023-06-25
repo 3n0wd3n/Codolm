@@ -89,7 +89,7 @@ export const HomeAboutContent = styled.div`
     @media (max-width: 800px) {
         padding: 2rem;
         width: 60vw;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
 `;
