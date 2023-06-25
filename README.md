@@ -21,3 +21,5 @@ https://cs.wix.com/website-template/view/html/2904?originUrl=https%3A%2F%2Fcs.wi
 https://www.freecodecamp.org/news/reveal-on-scroll-in-react-using-the-intersection-observer-api/
 
 https://stackoverflow.com/questions/43679191/overlay-2-divs-where-one-is-static-and-the-other-is-scrollable
+
+https://www.react-reveal.com/

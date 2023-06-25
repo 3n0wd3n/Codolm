@@ -39,6 +39,7 @@ export const HomeH1Intro = styled.h1`
     @media (max-width: 800px) {
         font-size: 2rem;
     }
+
 `;
 
 export const HomeH2About = styled.h2`
@@ -148,6 +149,10 @@ export const HomeCourseContainer = styled.div`
     box-shadow: 2px 3px 10px #8888;
     border-radius: 15px;
     cursor: pointer;
+    transition: 0.7s;
+    &:hover{
+        box-shadow: 4px 5px 25px #8888;
+    }
 `;
 
 export const HomeCourseButton = styled.button`
