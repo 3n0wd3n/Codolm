@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const HomeMainContainer = styled.div`
+export const HomeMainContainer = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +84,7 @@ export const HomeImg = styled.img`
     object-fit: cover;
 `;
 
-export const HomeAboutContainer = styled.div`
+export const HomeAboutContainer = styled.section`
     background-image: linear-gradient(to right, #012241, rgba(56, 125, 122, .9));    
     min-height: 60vh;
     width: 100%;
@@ -94,7 +94,7 @@ export const HomeAboutContainer = styled.div`
     align-items: center;
 `;
 
-export const HomeAboutContent = styled.div`
+export const HomeAboutContent = styled.article`
     padding: 3rem;
     background-color: #fff;
     color: black;
@@ -103,7 +103,11 @@ export const HomeAboutContent = styled.div`
     width: 40vw;
     font-size: 1.5rem;
     margin: 2rem;
-    & > p:nth-of-type(2){
+    /* & > p:nth-of-type(2){
+        margin: 1rem 0 0 0;
+        color: rgba(0, 0, 10, .2);
+    } */
+    & > cite{
         margin: 1rem 0 0 0;
         color: rgba(0, 0, 10, .2);
     }
@@ -140,7 +144,7 @@ export const HomeButtonLeft = styled.button`
     }
 `;
 
-export const HomeOffersContainer = styled.div`
+export const HomeOffersContainer = styled.main`
     background-color: #fff;
     min-height: 70vh;
     max-width: 100vw;
@@ -252,7 +256,7 @@ export const HomeButtonRight = styled(HomeButtonLeft)`
     }
 `;
 
-export const HomeContactContainer = styled.div`
+export const HomeContactContainer = styled.footer`
   min-height: 30vh;
   max-width: 100vw;
   color: white;
