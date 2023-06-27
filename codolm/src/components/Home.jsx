@@ -120,7 +120,7 @@ function About({ translate }) {
     </HomeAboutContainer>)
 }
 
-function Main({open, setOpen, translate}) {
+function Main({ open, setOpen, translate }) {
   return (
     <HomeOffersContainer>
       {
@@ -160,7 +160,7 @@ function Main({open, setOpen, translate}) {
             <HomeCourseContainer>
               <HomeH3Offers>Terminal Scripting</HomeH3Offers>
               <img src={bash} alt="Terminal Scripting Img" height="235px" width="auto" />
-              <HomeCourseButton>Show</HomeCourseButton>
+              <HomeCourseButton><Link to="/BashSC">Show</Link></HomeCourseButton>
             </HomeCourseContainer>
           </Fade>
           <Fade duration={2000}>

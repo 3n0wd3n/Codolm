@@ -1,8 +1,29 @@
 // import SyntaxHighlighter from 'react-syntax-highlighter';
 // import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
-import githubStyle from 'react-syntax-highlighter/dist/esm/styles/hljs/github';
 
+// import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
+// import githubStyle from 'react-syntax-highlighter/dist/esm/styles/hljs/github';
+
+// import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+// import { solarizedlight } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
+// import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+// import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { nord } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
+// import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+// import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
+// import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+// import { xonokai  } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
+// import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+// import { monokai  } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
+// import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+// import { duotoneDark  } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 export default function PythonHomePage() {
     const code = `class WatercoolingComputer:
@@ -36,7 +57,7 @@ my_computer.run_benchmark();`;
         <>
             <h1 style={{textAlign: "center"}}>Python</h1>
             <div style={{ border: "0px solid rgba(56, 125, 122, .1)", borderRadius: "25px", padding: "0px", overflowX: 'auto',  margin: "0rem 4rem 0rem 4rem", backgroundColor: "rgba(56, 125, 122)"}}>
-                <SyntaxHighlighter language="python" style={githubStyle}>
+                <SyntaxHighlighter language="python" style={nord}>
                     {code}
                 </SyntaxHighlighter>
             </div>
