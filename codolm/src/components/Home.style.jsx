@@ -231,7 +231,6 @@ export const HomeCoursesButton = styled.button`
 
 export const HomeCourseButton = styled(HomeCoursesButton)`
     border: 1px solid;
-    color: #fff;
     width: 120px;
     height: 40px;
     border-radius: 25px;
@@ -241,8 +240,15 @@ export const HomeCourseButton = styled(HomeCoursesButton)`
     transition: .7s;
     font-size: 1rem;
     font-weight: 600;
+    & > a, a:visited, a:link, a:active {
+        color: #fff;
+        text-decoration: none;
+    }
     &:hover {
         background-color: #fff;
+        color: rgba(56, 125, 122);
+    }
+    &:hover > a {
         color: rgba(56, 125, 122);
     }
 `;
