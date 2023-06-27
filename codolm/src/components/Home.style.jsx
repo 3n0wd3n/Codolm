@@ -21,6 +21,17 @@ export const HomeFlagContainer = styled.div`
     top: 2rem;
     right: 2rem;
     cursor: pointer;
+    &:hover > img{
+        /* @keyframes rotation1 {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(359deg);
+            }
+        }
+        animation: rotation1 2s linear infinite; */
+    }
 `;
 
 export const HomeIntroContainer = styled.div`
