@@ -25,6 +25,8 @@ import { nord } from 'react-syntax-highlighter/dist/esm/styles/prism';
 // import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { duotoneDark  } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
+import CommonButton from './Common'
+
 export default function PythonHomePage() {
     const code = `class WatercoolingComputer:
     def __init__(self, cpu, gpu, reservoir_capacity, radiator_size):
@@ -61,6 +63,7 @@ my_computer.run_benchmark();`;
                     {code}
                 </SyntaxHighlighter>
             </div>
+            <CommonButton path={"/"} name={"Back"} />
         </>
     )
 }
