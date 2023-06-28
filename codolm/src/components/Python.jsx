@@ -69,6 +69,7 @@ export default function PythonHomePage() {
   return (
     <>
       <h1 style={{ textAlign: "center" }}>Python</h1>
+      <p style={{ margin: "0rem 0rem 0rem 4rem" }}>After all, this will be familiar for you.</p>
       <div
         style={{
           border: "0px solid rgba(56, 125, 122, .1)",
