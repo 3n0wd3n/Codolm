@@ -17,21 +17,28 @@ export const HomeMainContainer = styled.section`
 `;
 
 export const HomeFlagContainer = styled.div`
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    cursor: pointer;
-    &:hover > img{
-        /* @keyframes rotation1 {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(359deg);
-            }
-        }
-        animation: rotation1 2s linear infinite; */
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+
+  img {
+    transition: transform 0.7s ease-in-out;
+    animation: rotation1 1s;
+  }
+
+  @keyframes rotation1 {
+    from {
+      transform: rotate(0deg);
     }
+    to {
+      transform: rotate(10deg);
+    }
+  }
+
+  &:hover > img {
+    transform: rotate(15deg);
+  }
 `;
 
 export const HomeIntroContainer = styled.div`
