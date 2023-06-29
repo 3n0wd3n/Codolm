@@ -1,5 +1,5 @@
 # Codolm
-Presentation website where I offer face-to-face teaching hours in the programming languages I know.
+Presentation React website where I offer face-to-face teaching hours in the programming languages I know.
 
 ![Visit site using QR](https://github.com/3n0wd3n/Codolm/assets/47132583/fd324423-5fc1-4659-a188-619e784c863b)
 
