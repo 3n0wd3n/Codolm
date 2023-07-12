@@ -57,8 +57,8 @@ my_computer.run_benchmark();`;
 
     return (
         <>
-            <h1 style={{textAlign: "center"}}>Python</h1>
-            <div style={{ border: "0px solid rgba(56, 125, 122, .1)", borderRadius: "25px", padding: "0px", overflowX: 'auto',  margin: "0rem 4rem 0rem 4rem", backgroundColor: "rgba(56, 125, 122)"}}>
+            <h1 style={{ textAlign: "center" }}>Python</h1>
+            <div style={{ border: "0px solid rgba(56, 125, 122, .1)", borderRadius: "25px", padding: "0px", overflowX: 'auto', margin: "0rem 4rem 0rem 4rem", backgroundColor: "rgba(56, 125, 122)" }}>
                 <SyntaxHighlighter language="python" style={nord}>
                     {code}
                 </SyntaxHighlighter>
