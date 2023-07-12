@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-export const PythonMainContainer = styled.section`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    /* width: 100vw; */
-`
+export const PythonCodeContainer = styled.div`
+
+`;
+
+export const PythonH1Intro = styled.h1`
+
+`;

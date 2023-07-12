@@ -10,8 +10,8 @@
 // import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { nord } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { nord } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 // import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
@@ -25,45 +25,66 @@ import { nord } from 'react-syntax-highlighter/dist/esm/styles/prism';
 // import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { duotoneDark  } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-import CommonButton from './Common'
+import CommonButton from "./Common";
 
 export default function PythonHomePage() {
-    const code = `class WatercoolingComputer:
-    def __init__(self, cpu, gpu, reservoir_capacity, radiator_size):
-        self.cpu = cpu
-        self.gpu = gpu
-        self.reservoir_capacity = reservoir_capacity
-        self.radiator_size = radiator_size
-        self.reservoir_level = 0
+  const code = `
+    class Student :
+        max_age = 26
 
-    def fill_reservoir(self, amount):
-        if amount > 0:
-            self.reservoir_level = min(self.reservoir_level + amount, self.reservoir_capacity)
+        def __init__(self, name, surname, year_of_birth ,field):
+            self.name = name
+            self.surname = surname
+            self.year_of_birth = year_of_birth
+            self.field = field
 
-    def cool_cpu(self):
-        print(f"Cooling CPU using {self.radiator_size}-sized radiator.")
+            def _set_name(self, new_name):
+                self.name = new_name
+            
+            def _set_surname(self, new_surname):
+                self.surname = new_surname
+            
+            def __set_year_of_birth(self, new_year_of_birth):
+                self.year_of_birth = new_year_of_birth
 
-    def cool_gpu(self):
-        print(f"Cooling GPU using {self.radiator_size}-sized radiator.")
+            def get_name(self):
+                return self.name
 
-    def run_benchmark(self):
-        self.fill_reservoir(100)
-        self.cool_cpu()
-        self.cool_gpu()
-        print("Benchmarking computer performance...")
+            def get_length(self):
+                return len(self.get_name())
 
-my_computer = WatercoolingComputer("Intel i9-9900K", "NVIDIA GeForce RTX 3080", 500, "360mm")
-my_computer.run_benchmark();`;
+            def __str__(self):
+                return "Student(name='Default Name', surname='Default Surname', 'Default Birth Year', 'Default Field')"
+            
+    if __name__ == "__main__":
+        me = Student("Michael", "Hajny", 2000, "IT")
+        my_name = me.get_name()
+        len_of_name = me.get_length()
+        # print(f"Hi { my_name } your name is { len_of_name } letter long !")
+    
+    Output :
+    >> Hi Michael your name is 7 letter long !
+`;
 
-    return (
-        <>
-            <h1 style={{ textAlign: "center" }}>Python</h1>
-            <div style={{ border: "0px solid rgba(56, 125, 122, .1)", borderRadius: "25px", padding: "0px", overflowX: 'auto', margin: "0rem 4rem 0rem 4rem", backgroundColor: "rgba(56, 125, 122)" }}>
-                <SyntaxHighlighter language="python" style={nord}>
-                    {code}
-                </SyntaxHighlighter>
-            </div>
-            <CommonButton path={"/"} name={"Back"} />
-        </>
-    )
+  return (
+    <>
+      <h1 style={{ textAlign: "center" }}>Python</h1>
+      <p style={{ margin: "0rem 0rem 0rem 4rem" }}>After all, this will be familiar for you.</p>
+      <div
+        style={{
+          border: "0px solid rgba(56, 125, 122, .1)",
+          borderRadius: "25px",
+          padding: "0px",
+          overflowX: "auto",
+          margin: "0rem 4rem 0rem 4rem",
+          backgroundColor: "rgba(56, 125, 122)",
+        }}
+      >
+        <SyntaxHighlighter language="python" style={nord}>
+          {code}
+        </SyntaxHighlighter>
+      </div>
+      <CommonButton path={"/"} name={"Back"} />
+    </>
+  );
 }
